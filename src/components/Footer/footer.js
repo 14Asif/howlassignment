@@ -16,7 +16,7 @@ function Footer() {
   return (
     // Main footer container
     <footer className={Classes.footerContainer}>
-      // Social media icons container
+      {/* // Social media icons container */}
       <div className={Classes.socialIcons}>
         <FontAwesomeIcon icon={faFacebookF} className={Classes.icon} />
         <FontAwesomeIcon icon={faTwitter} className={Classes.icon} />

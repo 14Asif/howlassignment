@@ -58,6 +58,7 @@ const SectionWipesStyled = styled.div`
       width: 100%;
       margin-bottom: 20px;
       margin-left: 50px !important;
+      margin-top:120px !important;
     }
 
     .panel h1 {
