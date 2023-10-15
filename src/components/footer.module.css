@@ -1,0 +1,56 @@
+/* Footer.css */
+
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap to the next line on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #5b3e75;
+    color: #fff;
+  }
+  
+  .socialIcons span {
+    margin-right: 10px;
+    /* Add more styles for the social icons if necessary */
+  }
+  
+  .footerLinks {
+    margin: 20px 0; /* Adds vertical space, useful when items wrap */
+  }
+  
+  .footerLinks a {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .creditNote {
+    font-size: 12px;
+    text-align: center; /* Ensures text is centered on smaller screens */
+    width: 100%; /* Makes it span the full width on smaller screens */
+  }
+  
+  /* Media Query for Mobile */
+  @media screen and (max-width: 768px) {
+    .footerContainer {
+      padding: 20px;
+      flex-direction: column; /* Stacks items vertically */
+      text-align: center; /* Centers items */
+    }
+  
+    .socialIcons, .footerLinks {
+      order: 1; /* Ensures these sections are on top */
+      margin-bottom: 10px; /* Adds some space between sections */
+    }
+  
+    .footerLinks a {
+      display: block; /* Stacks links vertically */
+      margin: 5px 0; /* Adds vertical spacing between links */
+    }
+  
+    .creditNote {
+      order: 3; /* Ensures this section is at the bottom */
+    }
+  }
+  

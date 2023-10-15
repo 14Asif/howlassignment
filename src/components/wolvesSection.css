@@ -1,0 +1,49 @@
+/* wolvesSection.css */
+
+.wolves-section {
+    background-color: #8c68dc; /* Adjust to match the design color */
+    padding: 40px 0;
+    text-align: left;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.wolves-section h2 {
+    color: #fff;
+    font-size: 2em;
+    margin-right: 40px;
+}
+
+.arrow-image {
+    width: 30%; /* Adjust based on the desired size */
+    z-index: 2; /* Bring to the front */
+    position: relative;
+}
+
+.second-image {
+    width: 35%; /* Adjust based on the desired size */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .wolves-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .wolves-section h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    
+    .arrow-image, .second-image {
+        width: 80%; /* Adjust to occupy more width on mobile */
+        margin-bottom: 20px;
+    }
+}

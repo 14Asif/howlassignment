@@ -1,0 +1,19 @@
+/* Header.css */
+.headercontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f7f7f7; /* You can adjust this color as needed */
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menuicon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  

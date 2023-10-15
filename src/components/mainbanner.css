@@ -1,0 +1,58 @@
+/* growthPartnersSection.css */
+
+.growth-partners-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  flex: 1 1 50%; 
+  padding-right: 20px;
+}
+
+.leading-text, .trailing-text {
+  color: #4a4a4a; /* adjust as needed */
+  font-size: 16px;
+}
+
+h1 {
+  color: #4a4a4a; /* adjust as needed */
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 4px rgba(150, 150, 150, 1); /* add shadow effect */
+}
+
+.group-image {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .text-container, .group-image {
+      flex: 1 1 100%;
+      text-align: center;
+  }
+
+  .text-container {
+      padding-right: 0;
+      margin-bottom: 20px;
+  }
+
+  h1 {
+      font-size: 32px;
+  }
+
+  .leading-text, .trailing-text {
+      font-size: 14px;
+  }
+
+  .group-image {
+      max-width: 100%;
+  }
+}
