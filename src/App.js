@@ -8,13 +8,15 @@ import MainBanner from './components/mainBanner';
 import ClientsSection from './components/clientSection';
 import WolvesSection from './components/wolvesSection';
 import AnimationDesign from './components/AnimateDesign';
+import SwipeComponent from './components/SwipeComponent';
 function App() {
   return (
     <ParallaxProvider>
     <Header />
     <MainBanner />
     {/* <ParallaxSection /> */}
-    <AnimationDesign />
+    {/* <AnimationDesign /> */}
+    <SwipeComponent/>
     <ClientsSection />
     <WolvesSection />
     <Footer />

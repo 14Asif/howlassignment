@@ -1,7 +1,5 @@
-/* wolvesSection.css */
-
 .wolves-section {
-    background-color: #8c68dc; /* Adjust to match the design color */
+    background-color: #8c68dc;
     padding: 40px 0;
     text-align: left;
     position: relative;
@@ -18,21 +16,19 @@
     margin-right: 40px;
 }
 
-.arrow-image {
-    width: 30%; /* Adjust based on the desired size */
-    z-index: 2; /* Bring to the front */
-    position: relative;
-}
-
+.arrow-image,
 .second-image {
-    width: 35%; /* Adjust based on the desired size */
+    width: calc(30% - 10px);  /* Subtracting the margin to ensure they fit in one line */
+    margin-right: 10px;
+    z-index: 2; 
+    position: relative;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .wolves-section {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;  /* Centering everything on mobile */
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -40,10 +36,11 @@
     .wolves-section h2 {
         font-size: 1.5em;
         margin-bottom: 20px;
+        text-align: center;  /* Center the text */
     }
     
     .arrow-image, .second-image {
-        width: 80%; /* Adjust to occupy more width on mobile */
+        width: 80%; 
         margin-bottom: 20px;
     }
 }
