@@ -18,9 +18,10 @@
 
 .arrow-image,
 .second-image {
-    width: calc(30% - 10px);  /* Subtracting the margin to ensure they fit in one line */
+    width: calc(30% - 10px);
+    /* Subtracting the margin to ensure they fit in one line */
     margin-right: 10px;
-    z-index: 2; 
+    z-index: 2;
     position: relative;
 }
 
@@ -28,7 +29,8 @@
 @media (max-width: 768px) {
     .wolves-section {
         flex-direction: column;
-        align-items: center;  /* Centering everything on mobile */
+        align-items: center;
+        /* Centering everything on mobile */
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -36,11 +38,13 @@
     .wolves-section h2 {
         font-size: 1.5em;
         margin-bottom: 20px;
-        text-align: center;  /* Center the text */
+        text-align: center;
+        /* Center the text */
     }
-    
-    .arrow-image, .second-image {
-        width: 80%; 
+
+    .arrow-image,
+    .second-image {
+        width: 80%;
         margin-bottom: 20px;
     }
 }
