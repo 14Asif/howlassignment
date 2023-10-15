@@ -15,9 +15,9 @@ padding:4.5rem;
   background: -webkit-linear-gradient(purple, #a052a0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 7rem;  /* Adjusted based on the image */
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Adding a white shadow */
-  line-height: 1.2;  /* Adjust line spacing */
+  font-size: 7rem;  
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); 
+  line-height: 1.2;  
 
 }
 .title2 {
@@ -26,11 +26,10 @@ padding:4.5rem;
   background: -webkit-linear-gradient(purple, #a052a0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 7rem;  /* Adjusted based on the image */
+  font-size: 7rem;  
   padding-left: 3rem;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Adding a white shadow */
-  line-height: 1.2;  /* Adjust line spacing */
-
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); 
+  line-height: 1.2; 
 }
 
 .title3 {
@@ -38,11 +37,11 @@ padding:4.5rem;
   background: -webkit-linear-gradient(purple, #a052a0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 7rem;  /* Adjusted based on the image */
+  font-size: 7rem;  
   text-align: right;
   padding-left: 8rem;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Adding a white shadow */
-  line-height: 1.2;  /* Adjust line spacing */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); 
+  line-height: 1.2;  
 
 }
 
