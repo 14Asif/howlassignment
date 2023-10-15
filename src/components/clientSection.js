@@ -26,7 +26,7 @@ const ClientsSection = () => {
           "./images/page_27.png",
           "./images/page_9.png",
         ].map((image, index) => (
-          <div key={index} className="client-image">
+          <div key={index} className="client-image"  style={{ animationDelay: `${index * 0.1}s` }}>
             <img src={image} alt={`Client ${index + 1}`} />
           </div>
         ))}

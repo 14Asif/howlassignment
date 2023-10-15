@@ -1,0 +1,27 @@
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  
+  .left-section, .right-section {
+    flex: 1;
+    padding: 2em;
+    overflow-y: auto;
+  }
+  
+  .left-section > div {
+    padding: 1em 0;
+    cursor: pointer;
+  }
+  
+  .left-section > div:hover {
+    background-color: #f3f3f3;
+  }
+  
+  .right-section {
+    border-left: 1px solid #ccc;
+    padding-left: 2em;
+  }
+  
