@@ -1,8 +1,6 @@
 
-
 import React from "react";
 import "./mainbanner.css";
-
 const MainBanner = () => {
   return (
     <div className="growth-partners-section">

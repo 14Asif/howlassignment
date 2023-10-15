@@ -1,19 +1,29 @@
-/* Header.css */
 .headercontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f7f7f7; /* You can adjust this color as needed */
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.menuicon {
+  font-size: 24px;
+  cursor: pointer;
+  display: block; /* Hide by default for larger screens */
+}
+
+@media (max-width: 768px) {
   .menuicon {
-    font-size: 24px;
-    cursor: pointer;
+      display: block; /* Show the menu icon on smaller screens */
   }
-  
+
+  /* Add more styles for smaller screens if needed */
+}

@@ -14,7 +14,7 @@ function App() {
     <Header />
     <MainBanner />
     {/* <ParallaxSection /> */}
-    <AnimationDesign />
+    {/* <AnimationDesign /> */}
     <ClientsSection />
     <WolvesSection />
     <Footer />
