@@ -26,11 +26,11 @@ const SectionWipesStyled = styled.div`
   }
   
   .panel.blue {
-    background-color: #3883d8;
+    background-color: #212322;
   }
 
   .panel.content {
-    background-color: #3883d8;
+    background-color: #212322;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,6 +60,7 @@ const SectionWipesStyled = styled.div`
     .panel.content .left, .panel.content .right {
       width: 100%;
       margin-bottom: 20px;
+      margin-left:50px !important;
     }
 
     .panel h1 {
@@ -93,8 +94,7 @@ const SectionWipesStyled = styled.div`
     }
   }
 `;
-const sceneCount = 3; // Update this if you add more scenes
-const panelHeight = 50; // 100vh in terms of percentage
+
 
 
 const SectionWipes = () => (
@@ -104,7 +104,7 @@ const SectionWipes = () => (
     <Scene pin duration={"100%"}>
       <div className="panel content">
           <div className="left">
-            <h1>STRATEGY & CONSULTING1</h1>
+            <h1>STRATEGY & CONSULTING</h1>
            
           </div>
           <div className="right">
@@ -112,7 +112,7 @@ const SectionWipes = () => (
             <p>From mapping out business and functional requirements, to developing the infrastructure to optimize traditionally fragmented processes, we help you create integrated, future-proofed commerce solutions.</p>
             <p>Paid Search & Media</p>
             <p>Data Optimization & Innovation</p>
-            {/* Add other items as needed */}
+        
             <p>Dive Deeper</p>
           </div>
         </div>
@@ -129,7 +129,6 @@ const SectionWipes = () => (
             <p>From mapping out business and functional requirements, to developing the infrastructure to optimize traditionally fragmented processes, we help you create integrated, future-proofed commerce solutions.</p>
             <p>Paid Search & Media</p>
             <p>Data Optimization & Innovation</p>
-            {/* Add other items as needed */}
             <p>Dive Deeper</p>
           </div>
         </div>
@@ -146,12 +145,11 @@ const SectionWipes = () => (
             <p>From mapping out business and functional requirements, to developing the infrastructure to optimize traditionally fragmented processes, we help you create integrated, future-proofed commerce solutions.</p>
             <p>Paid Search & Media</p>
             <p>Data Optimization & Innovation</p>
-            {/* Add other items as needed */}
             <p>Dive Deeper</p>
           </div>
         </div>
       </Scene>
-      {/* Add other panels as needed */}
+  
     </Controller>
     {/* <Spacer scenesHeight={"300vh"} /> */}
   </SectionWipesStyled>
