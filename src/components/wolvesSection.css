@@ -1,5 +1,5 @@
 .wolves-section {
-    background-color: #8c68dc;
+    background-color: #BD72D3;
     padding: 40px 0;
     text-align: left;
     position: relative;
@@ -36,7 +36,7 @@
     }
 
     .wolves-section h2 {
-        font-size: 1.5em;
+        font-size: 2em;
         margin-bottom: 20px;
         text-align: center;
         /* Center the text */

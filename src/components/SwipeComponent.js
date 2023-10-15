@@ -18,6 +18,7 @@ const SectionWipesStyled = styled.div`
   .panel h1 {
     font-size: 80px;
     margin-top: 20vh;
+    color:#BD72D3;
   }
 
   .panel.blue {
@@ -68,6 +69,7 @@ const SectionWipesStyled = styled.div`
 
     .panel.content .left h1 {
       font-size: 40px;
+      color:#BD72D3;
     }
 
     .panel.content .right p {
@@ -84,6 +86,7 @@ const SectionWipesStyled = styled.div`
 
     .panel.content .left h1 {
       font-size: 30px;
+      color:#BD72D3;
     }
 
     .panel.content .right p {
@@ -115,7 +118,7 @@ const SectionWipes = () => (
             <p>Paid Search & Media</p>
             <p>Data Optimization & Innovation</p>
 
-            <p>Dive Deeper</p>
+            
           </div>
         </div>
       </Scene>
@@ -134,7 +137,7 @@ const SectionWipes = () => (
             </p>
             <p>Paid Search & Media</p>
             <p>Data Optimization & Innovation</p>
-            <p>Dive Deeper</p>
+            
           </div>
         </div>
       </Scene>
@@ -153,7 +156,7 @@ const SectionWipes = () => (
             </p>
             <p>Paid Search & Media</p>
             <p>Data Optimization & Innovation</p>
-            <p>Dive Deeper</p>
+            
           </div>
         </div>
       </Scene>

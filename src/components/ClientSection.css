@@ -3,9 +3,11 @@
     background-color: #f9f9f9;
     text-align: center;
 }
-
-h2 {
+.clients-section
+ h2 {
     margin-bottom: 50px;
+    color:#BD72D3;
+    font-size: 4em;
 }
 
 .clients-grid {
@@ -33,5 +35,10 @@ h2 {
     .clients-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+        padding:10px;
     }
+    .clients-section
+ h2 {
+    font-size: 3em !important;
+}
 }
