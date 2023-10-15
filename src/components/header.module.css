@@ -17,13 +17,12 @@
 .menuicon {
   font-size: 24px;
   cursor: pointer;
-  display: block; /* Hide by default for larger screens */
+  display: block;
 }
 
 @media (max-width: 768px) {
   .menuicon {
-      display: block; /* Show the menu icon on smaller screens */
+      display: block;
   }
 
-  /* Add more styles for smaller screens if needed */
 }
