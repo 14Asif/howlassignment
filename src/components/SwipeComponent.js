@@ -1,16 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Controller, Scene } from 'react-scrollmagic';
+import React from "react";
+import styled from "styled-components";
+import { Controller, Scene } from "react-scrollmagic";
 
-const Spacer = styled.div`
-  height: ${({ scenesHeight }) => scenesHeight || '300vh'}; 
-  /* 300vh by default assuming 3 scenes, will be overridden by actual height */
-`;
-
-
+// Styling using styled-components
 const SectionWipesStyled = styled.div`
   overflow: hidden;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 
   .panel {
     height: 100vh;
@@ -24,7 +19,7 @@ const SectionWipesStyled = styled.div`
     font-size: 80px;
     margin-top: 20vh;
   }
-  
+
   .panel.blue {
     background-color: #212322;
   }
@@ -35,10 +30,11 @@ const SectionWipesStyled = styled.div`
     flex-direction: row;
     justify-content: space-between;
     padding: 100px;
-    margin-left:-100px;
+    margin-left: -100px;
   }
 
-  .panel.content .left, .panel.content .right {
+  .panel.content .left,
+  .panel.content .right {
     width: 100%;
   }
 
@@ -57,10 +53,11 @@ const SectionWipesStyled = styled.div`
       padding: 50px;
     }
 
-    .panel.content .left, .panel.content .right {
+    .panel.content .left,
+    .panel.content .right {
       width: 100%;
       margin-bottom: 20px;
-      margin-left:50px !important;
+      margin-left: 50px !important;
     }
 
     .panel h1 {
@@ -95,24 +92,28 @@ const SectionWipesStyled = styled.div`
   }
 `;
 
-
-
 const SectionWipes = () => (
-  
-    <SectionWipesStyled>
-    <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
-    <Scene pin duration={"100%"}>
-      <div className="panel content">
+  // The main styled container component
+  <SectionWipesStyled>
+    {/* Controller from 'react-scrollmagic', globalSceneOptions defines some global settings for every scene */}
+    <Controller globalSceneOptions={{ triggerHook: "onLeave" }}>
+      {/* Each Scene component represents an interaction or an animation for a specific scroll position */}
+      <Scene pin duration={"100%"}>
+        <div className="panel content">
           <div className="left">
             <h1>STRATEGY & CONSULTING</h1>
-           
           </div>
           <div className="right">
             <p>Out-of-the-box defines our thinking, not our solutions.</p>
-            <p>From mapping out business and functional requirements, to developing the infrastructure to optimize traditionally fragmented processes, we help you create integrated, future-proofed commerce solutions.</p>
+            <p>
+              From mapping out business and functional requirements, to
+              developing the infrastructure to optimize traditionally fragmented
+              processes, we help you create integrated, future-proofed commerce
+              solutions.
+            </p>
             <p>Paid Search & Media</p>
             <p>Data Optimization & Innovation</p>
-        
+
             <p>Dive Deeper</p>
           </div>
         </div>
@@ -120,13 +121,16 @@ const SectionWipes = () => (
       <Scene pin duration={"100%"}>
         <div className="panel content">
           <div className="left">
-       
             <h1>EXPERIENCE</h1>
-          
           </div>
           <div className="right">
             <p>Out-of-the-box defines our thinking, not our solutions.</p>
-            <p>From mapping out business and functional requirements, to developing the infrastructure to optimize traditionally fragmented processes, we help you create integrated, future-proofed commerce solutions.</p>
+            <p>
+              From mapping out business and functional requirements, to
+              developing the infrastructure to optimize traditionally fragmented
+              processes, we help you create integrated, future-proofed commerce
+              solutions.
+            </p>
             <p>Paid Search & Media</p>
             <p>Data Optimization & Innovation</p>
             <p>Dive Deeper</p>
@@ -136,22 +140,23 @@ const SectionWipes = () => (
       <Scene pin duration={"100%"}>
         <div className="panel content">
           <div className="left">
-          
             <h1>DATA INSIGHTS & ANALYTICS</h1>
-          
           </div>
           <div className="right">
             <p>Out-of-the-box defines our thinking, not our solutions.</p>
-            <p>From mapping out business and functional requirements, to developing the infrastructure to optimize traditionally fragmented processes, we help you create integrated, future-proofed commerce solutions.</p>
+            <p>
+              From mapping out business and functional requirements, to
+              developing the infrastructure to optimize traditionally fragmented
+              processes, we help you create integrated, future-proofed commerce
+              solutions.
+            </p>
             <p>Paid Search & Media</p>
             <p>Data Optimization & Innovation</p>
             <p>Dive Deeper</p>
           </div>
         </div>
       </Scene>
-  
     </Controller>
-    {/* <Spacer scenesHeight={"300vh"} /> */}
   </SectionWipesStyled>
 );
 
